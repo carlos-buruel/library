@@ -22,5 +22,23 @@ abstract class BaseActivity(private val intRes: Int): AppCompatActivity()
 		}
 	}
 
-	abstract fun onCreateView()
+	open fun onCreateView()
+	{
+		initData()
+		initListener()
+		setList()
+	}
+	open fun initData() {}
+	open fun setList() {}
+	open fun initListener() {}
+
+	open fun showDialog()
+	{
+		ProgressWait.showProgressDialog(this)
+	}
+
+	open fun hideDialog()
+	{
+		ProgressWait.hideProgressDialog()
+	}
 }
