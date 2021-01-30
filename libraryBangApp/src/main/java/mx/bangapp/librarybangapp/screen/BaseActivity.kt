@@ -12,6 +12,9 @@ abstract class BaseActivity(private val intRes: Int): AppCompatActivity()
 		super.onCreate(savedInstanceState)
 		setContentView(intRes)
 		onCreateView()
+		initData()
+		initListener()
+		setList()
 	}
 
 	fun hideKeyboard()
@@ -22,12 +25,7 @@ abstract class BaseActivity(private val intRes: Int): AppCompatActivity()
 		}
 	}
 
-	open fun onCreateView()
-	{
-		initData()
-		initListener()
-		setList()
-	}
+	open fun onCreateView() {}
 	open fun initData() {}
 	open fun setList() {}
 	open fun initListener() {}
