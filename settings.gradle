@@ -1,3 +1,2 @@
-include ':libraryBangApp'
-include ':app'
+include ':app', ':libraryBangApp'
 rootProject.name = "TestApp"

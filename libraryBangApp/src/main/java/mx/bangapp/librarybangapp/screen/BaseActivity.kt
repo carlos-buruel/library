@@ -5,12 +5,11 @@ import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 
-abstract class BaseActivity(private val intRes: Int): AppCompatActivity()
+abstract class BaseActivity(intRes: Int): AppCompatActivity(intRes)
 {
 	override fun onCreate(savedInstanceState: Bundle?)
 	{
 		super.onCreate(savedInstanceState)
-		setContentView(intRes)
 		onCreateView()
 		initData()
 		initListener()
