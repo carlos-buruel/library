@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="vProgressBarBase" type="id"/>
+	<item name="vProgressBarContent" type="id"/>
+	<item name="vProgressBarText1" type="id"/>
+	<item name="vProgressBarText2" type="id"/>
+</resources>
